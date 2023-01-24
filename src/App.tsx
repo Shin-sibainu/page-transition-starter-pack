@@ -9,9 +9,9 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Blog from "./components/Blog";
 import Contact from "./components/Contact";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 import { AnimatePresence } from "framer-motion";
+import InitialTransition from "./utils/InitialTransition";
 
 /* https://www.section.io/engineering-education/page-transition-in-react-using-framer-motion/ */
 
@@ -20,12 +20,14 @@ function App() {
   return (
     <div className="App">
       <AnimatePresence>
+        <InitialTransition>
           <Header />
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+        </InitialTransition>
       </AnimatePresence>
     </div>
   );
