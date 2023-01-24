@@ -1,0 +1,92 @@
+:root {
+  --black-color: #010000;
+  --white-color: #ffffff;
+  --lightgray-color: #e6e6e6;
+}
+
+.App {
+  font-size: 18px;
+  height: 100vh;
+  width: 100%;
+  /* font-weight: 400; */
+  /* font-style: normal; */
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background: black;
+  color: white;
+  height: 90px;
+  position: fixed;
+  z-index: 10;
+}
+
+header .logo h3 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  font-size: 19px;
+  text-decoration: none;
+  color: var(--white-color);
+  transition: all 0.2s;
+}
+
+nav ul li a:hover {
+  color: #48b4af;
+}
+
+.container {
+  height: 100vh;
+  padding: 120px;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+.profileImage {
+  object-fit: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+img {
+  width: 300px;
+  height: 500px;
+}
+
+.service {
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+#skill img {
+  object-fit: cover;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  height: 300px;
+}
+
+#skill button {
+  margin-bottom: 100px;
+}
